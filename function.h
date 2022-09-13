@@ -53,3 +53,19 @@ int* ins(int *tab,int N,int pos,int nbr){
     tab[pos-i]=nbr;
     return tab;
 }
+int max(int *tab,int N){
+    int i,max=tab[0];
+    for(i=0;i<N;i++){
+        if(tab[i]>max){
+            max=tab[i];
+        }
+    }return max;
+}
+int min(int *tab,int N){
+    int i,min=tab[0];
+    for(i=0;i<N;i++){
+        if(tab[i]<min){
+            min=tab[i];
+        }
+    }return min;
+}
