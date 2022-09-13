@@ -14,7 +14,7 @@ int main(){
         printf("\n%d : %d",i+1,tab[i]);
        }
     printf("\n----Votre tableau triee----");
-    for(i=1;i<N-1;i++){
+    for(i=1;i<=N-1;i++){
         j=i;
         while (j > 0 && tab[j-1] > tab[j]) {
          c = tab[j];
