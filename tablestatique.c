@@ -24,9 +24,7 @@ int main(){
        min=tab[i];
        }
     }
-    for(i=0;i<N;i++){
-
-    }
+   
     for (i = N- 1, j = 0; i >= 0; i--, j++){inv[j] =tab[i];}
     printf("\n");
     printf("\nLa valeur maximale est : %d",max);
@@ -45,6 +43,6 @@ int main(){
         }
     }if(nb==0){
         printf("Pas de %d dans ce tableau",c);
-    }else printf("%d se trouve %d dans ce tableau",c,nb);
+    }else printf("%d se trouve %d fois dans ce tableau",c,nb);
     return 0;
 }
