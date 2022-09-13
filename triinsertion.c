@@ -14,14 +14,14 @@ int main(){
         printf("\n%d : %d",i+1,tab[i]);
        }
     printf("\n----Votre tableau triee----");
-    for(i=1;i<N;i++){
-        for(j=0;j<N-1;j++){
-            if ( tab[j] > tab[j+1] ) {
-            c = tab[j];
-            tab[j] = tab[j+1];
-            tab[j+1] = c;
-          } 
-        }
+    for(i=1;i<N-1;i++){
+        j=i;
+        while (j > 0 && tab[j-1] > tab[j]) {
+         c = tab[j];
+         tab[j] = tab[j-1];
+         tab[j-1] = c;
+      j--;
+    }
     }
     for(i=0;i<N;i++){
         printf("\n%d : %d",i+1,tab[i]);
