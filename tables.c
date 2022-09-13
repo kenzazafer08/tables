@@ -28,10 +28,6 @@ int main(){
 
     }
     for (i = N- 1, j = 0; i >= 0; i--, j++){inv[j] =tab[i];}
-    for (i = 0; i < N; i++){tab[i] = inv[i];}
-        
-    
-   
     printf("\n");
     printf("\nLa valeur maximale est : %d",max);
     printf("\nLa valeur minimale est : %d",min);
@@ -40,7 +36,7 @@ int main(){
     printf("\n");
     printf("\nLe tableau inverse est: ");
     for (i = 0; i < N; i++){
-        printf("\n%d : %d",i+1,tab[i]);}
+        printf("\n%d : %d",i+1,inv[i]);}
     printf("\nChercher le nombre d'occurence d'une valeur : ");
     scanf("%d",&c);
     for(i=0;i<N;i++){
