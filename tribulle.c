@@ -1,7 +1,7 @@
 #include <stdio.h>
 #define D 10
 int main(){
-    int j,i,N,c=0;
+    int j,i,N,c;
     int tab[D];
      printf("Combien de nombre vous voulez stocker (max : 10) : ");
     scanf("%d",&N);
@@ -14,15 +14,18 @@ int main(){
         printf("\n%d : %d",i+1,tab[i]);
        }
     printf("\n----Votre tableau triee----");
-    for(i=1;i<N;i++){
-        for(j=0;j<N-1;j++){
-            if ( tab[j] > tab[j+1] ) {
-            c = tab[j];
-            tab[j] = tab[j+1];
-            tab[j+1] = c;
-          } 
+    do{
+       c=0;
+      for(i=0;i<N-1;i++){
+        if(tab[i]>tab[i+1]){
+           int tmp;
+           tmp=tab[i];
+           tab[i]=tab[i+1];
+           tab[i+1]=tmp;
+           c++;
         }
-    }
+      }
+    }while(c>0);
     for(i=0;i<N;i++){
         printf("\n%d : %d",i+1,tab[i]);
        }
