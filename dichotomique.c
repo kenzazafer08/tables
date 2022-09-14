@@ -35,7 +35,9 @@ printf("Combien de nombre vous voulez stocker (max : 10) : ");
       {
            iTableau=tri(iTableau,N);
            iMilieu=(iPremier+iDernier)/2;
-           if(iTableau[iMilieu]==iRecherche) iTrouve =1;
+           if(iTableau[iMilieu]==iRecherche){
+            iTrouve =1;
+           } 
            else
                  {
                  if(iTableau[iMilieu]>iRecherche) iDernier = iMilieu -1;
@@ -43,6 +45,6 @@ printf("Combien de nombre vous voulez stocker (max : 10) : ");
                  }
           }
           if(iTrouve==0) printf("Cette valeur n'appartient pas a la liste\n");
-           else printf("Cette valeur appartient a la liste\n");
+           else printf("Cette valeur %d appartient a la liste\n",iRecherche);
         
     } 

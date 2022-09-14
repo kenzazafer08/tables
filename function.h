@@ -21,7 +21,7 @@ int* tri(int *tab,int N){
     int i,j,c;
     for(i=0;i<N-1;i++){
         for(j=i+1;j<N;j++){
-            if ( tab[i] < tab[j] ) {
+            if ( tab[i] > tab[j] ) {
             c = tab[i];
             tab[i] = tab[j];
             tab[j] = c;
