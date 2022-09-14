@@ -12,7 +12,6 @@ void main()
 	}  
 	printf("\nEntrer la valeur a chercher: ");
 	scanf("%d",&x);	
-	
 	e = 0;
 	for(i=0; i<n; i++){
    		if(T[i] == x){

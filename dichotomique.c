@@ -20,11 +20,7 @@ printf("Combien de nombre vous voulez stocker (max : 10) : ");
     for(i=0;i<N;i++){
         printf("\n%d : %d",i+1,iTableau[i]);
        }
-    
-    printf("\n----Votre tableau----");
-    for(i=0;i<N;i++){
-        printf("\n%d : %d",i+1,iTableau[i]);
-       }
+       
     printf("\n");
     printf("Quel element recherchez-vous ? ");
     scanf("%d",&iRecherche);
