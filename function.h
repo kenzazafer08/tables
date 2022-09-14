@@ -69,3 +69,21 @@ int min(int *tab,int N){
         }
     }return min;
 }
+void search(int *T,int n){
+    int x,e,i;
+    printf("Entrer la valeur a chercher: ");
+	scanf("%d",&x);	
+	
+	e = 0;
+	for(i=0; i<n; i++){
+   		if(T[i] == x){
+   			e += 1;
+   			break;
+		}   			
+	} 
+	
+	if(e == 0)
+		printf("La valeur %d n'existe pas dans le tableau.\n", x);
+	else
+		printf("La valeur %d existe %d fois dans le tableau.\n", x,e);
+}

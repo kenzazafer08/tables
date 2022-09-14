@@ -15,6 +15,7 @@ int main(){
         printf("Trier votre tableau : 4\n");
         printf("Afficher le maximum : 5\n");
         printf("Afficher le minimum : 6\n");
+        printf("Chercher un element : 7\n");
         printf("Quitter : 0\n");
         scanf("%d",&choix);
         switch(choix){
@@ -51,6 +52,9 @@ int main(){
             case 6 :
               mn= min(tab,N);
               printf("la valeur minimale est : %d\n",mn);
+            break;
+            case 7 :
+              search(tab,N);
             break;
             default :
             printf("Choix non valide\n");
