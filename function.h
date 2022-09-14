@@ -43,14 +43,11 @@ int* inv(int *tab,int N){
 }
 int* ins(int *tab,int N,int pos,int nbr){
     int i;
-    
     if(pos<0 || pos>N+1){
         printf("Position non valide !");
     }else
-    for (i = N; i >= pos; i--){
-        tab[i]=tab[i-1];
-    }
-    tab[pos-i]=nbr;
+    for (i = N - 1; i >= pos - 1; i--) tab[i+1] = tab[i];
+   tab[pos-1] = nbr;
     return tab;
 }
 int max(int *tab,int N){

@@ -31,6 +31,7 @@ int main(){
              printf("Entrer sa position : \n");
              scanf("%d",&pos);
              N=N+1;
+             printf("%d",nbr);
              tab = realloc(tab, (N));
              tab = ins(tab,N,pos,nbr);
              affichage(tab,N);
