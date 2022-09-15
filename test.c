@@ -26,9 +26,9 @@ int main(){
              affichage(tab,N);
             break;
             case 2 :
-             printf("Entrer le nombre que vous voulez inserer : \n");
-             scanf("%d",&nbr);
              printf("Entrer sa position : \n");
+             scanf("%d",&nbr);
+             printf("Entrer le nombre que vous voulez inserer : \n");
              scanf("%d",&pos);
              N=N+1;
              printf("%d",nbr);
