@@ -10,7 +10,7 @@ int main(){
     tab = saisie(tab,N);
     do{
         printf("Affciher votre tableau : 1\n");
-        printf("Inserer un notre nombre dans votre tableau : 2\n");
+        printf("Inserer un element dans votre tableau : 2\n");
         printf("Inverser votre tableau : 3\n");
         printf("Trier votre tableau : 4\n");
         printf("Afficher le maximum : 5\n");
