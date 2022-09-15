@@ -29,17 +29,19 @@ int* tri(int *tab,int N){
         }
     }return tab;
 }
-int* inv(int *tab,int N){
+void inv(int *tab,int N){
     int i,j,c;
-    for(i=0;i<N-1;i++){
-        for(j=i+1;j<N;j++){
-            if ( tab[i] < tab[j] ) {
-            c = tab[i];
-            tab[i] = tab[j];
-            tab[j] = c;
-          } 
+    int *t;
+        for(j=N-1,j=0;i>=0;i--,j++){
+            t[j]=tab[i];
         }
-    }return tab;
+        for(i=0;i<N;i++){
+            tab[i]=t[j];
+        }
+    printf("Tableu inverser : \n");
+    for(i=0;i<N;i++){
+     printf("case %d = %d\n",i+1,tab[i]);
+    }
 }
 int* ins(int *tab,int N,int pos,int nbr){
     int i;

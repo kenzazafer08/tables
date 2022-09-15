@@ -37,9 +37,7 @@ int main(){
              affichage(tab,N);
             break;
             case 3 :
-             printf("Tableu inverser : \n");
-             tab= inv(tab,N);
-             affichage(tab,N);
+             inv(tab,N);
             break;
             case 4 :
               printf("Tableu triee : \n");
