@@ -8,6 +8,7 @@ int main(){
     scanf("%d",&N);
     tab=malloc(N*sizeof(int));
     tab = saisie(tab,N);
+    
     do{
         printf("Affciher votre tableau : 1\n");
         printf("Inserer un element dans votre tableau : 2\n");
