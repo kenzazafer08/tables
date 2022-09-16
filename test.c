@@ -37,7 +37,8 @@ int main(){
              affichage(tab,N);
             break;
             case 3 :
-             inv(tab,N);
+            tab = inv(tab,N);
+            affichage(tab,N);
             break;
             case 4 :
               printf("Tableu triee : \n");
